@@ -1,0 +1,13 @@
+#copyrights {
+    position: absolute;
+   
+    height: 375px;
+    width: 105%;
+    background-image: url("assests/chinese-lantern-festival-city-scape-bottom.png");
+    background-size: cover;
+    background-position:center;
+    margin-top:400px;
+    text-align: center;
+     margin-left:-40px;
+ margin-right:0;
+}
