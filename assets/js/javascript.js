@@ -1,5 +1,4 @@
-$("#start").on("click", function(){
-	$("#start").remove();
+$(document).ready(function(){
 	game.loadQuestion();
 });
 $(document).on("click", ".answer-button", function(e){
@@ -19,7 +18,7 @@ var questions = [{
   correctAnswer: "Have you eaten yet?",
   image: "assets/css/images/chifan.jpg"
 }, {
-  question: "Xi3 Shou3 Jian4 means...?",
+  question: "'Handwashing Room' means...?",
   answers: ["Football", "Sink", "Bathroom", "Washing Machine"],
   correctAnswer: "Bathroom",
   image: "assets/css/images/bathroom.jpg"
@@ -39,9 +38,9 @@ var questions = [{
   correctAnswer: "Thank you",
   image: "assets/css/images/thankyou.png"
 }, {
-  question: "What is the Chinese word for Dragon?",
-  answers: ["Hu3", "Long2", "Long4", "Hui1"],
-  correctAnswer: "Long2",
+  question: "What mythical animal is often paired with a Phoenix?",
+  answers: ["Tiger", "Dragon", "Serpent", "Ox"],
+  correctAnswer: "Dragon",
   image: "assets/css/images/dragon.png"
 }, {
   question: "How do you say Goodbye?",
@@ -53,7 +52,7 @@ var timer;
 var game = {
 	questions : questions,
 	currentQuestion: 0,
-	counter: 10,
+	counter: 30,
 	correct : 0,
 	incorrect: 0,
 	unanswered: 0,
@@ -69,7 +68,7 @@ var game = {
 		$("#answers").empty();
 
 		timer = setInterval(game.countdown, 1000);
-		$("#input").html("<h2 id = 'counter'> 10</h2>");
+		$("#input").html("<h2 id = 'counter'> 30</h2>");
 		$("#input").append("<h2>" + questions[game.currentQuestion].question + "</h2>");
 		for (var i = 0; i < questions[game.currentQuestion].answers.length; i++) {
 			$("#input").append('<button class ="answer-button" id ="button' + i +'"data-name ="' + questions[game.currentQuestion].answers[i]+'">' + questions[game.currentQuestion].answers[i] + '</button>')
@@ -77,7 +76,7 @@ var game = {
 	},
 
 	nextQuestion : function(){
-		game.counter = 10;
+		game.counter = 30;
 		
 		$("#counter").html(game.counter);
 		game.currentQuestion++;
@@ -98,6 +97,7 @@ var game = {
 
 	},
 	results: function (){
+		$('#input').empty();
 		clearInterval(timer);
 		$("#answers").html("<h1> All Done </h1>");
 		$("#answers").append("<h2> Correct: " + game.correct +"</h2>");
@@ -145,7 +145,7 @@ var game = {
 	},
 	reset: function(){
 		game.currentQuestion = 0;
-		game.counter = 10;
+		game.counter = 30;
 		game.correct = 0;
 		game.incorrect = 0;
 		game.unanswered = 0;
