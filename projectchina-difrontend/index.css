@@ -1,0 +1,63 @@
+
+img{
+	height:200px;
+	width: 240px;
+}
+button,
+
+button:focus {
+  color: red;
+  text-shadow: 0 .5px .5px rgba(0,0,0,.5); /* Prevent inheritence from `body` */
+  background-color: white;
+ 
+          border: 1px outset #A61C14;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+
+}
+
+    .quickFlip {
+    	margin:auto;
+    	
+
+
+    }
+    .quickFlip {
+        height: 300px;
+        width: 700px;
+    }
+    
+    
+    .redPanel,
+    .blackPanel {
+		width:100%;    	
+        text-align: center;
+        
+    }
+    
+   .blackPanel {
+        display:inline-block;
+        color:red;
+		text-align: center;
+		text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    }
+     .redPanel {
+        color: gold;
+ 		text-align: center;
+		text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    }
+
+
+#copyrights {
+    position: absolute;
+   
+    height: 335px;
+    width: 105%;
+    background-image: url("assets/chinese-lantern-festival-city-scape-bottom.png");
+    background-size: cover;
+    background-position:center;
+    margin-top:50px;
+    text-align: center;
+     margin-left:-40px;
+ margin-right:0;
+}
