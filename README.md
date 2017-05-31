@@ -1,2 +1,3 @@
-# projectchina
-Website that teaches westerners basic Chinese phrases as well as cultural does and dont's.
+#Learn Chinese
+
+### Learn cultural references, slang, and important phrases in China. Let's celebrate the unique and vibrant culture!
