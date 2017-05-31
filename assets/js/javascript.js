@@ -41,7 +41,7 @@ var questions = [{
   question: "What mythical animal is often paired with a Phoenix?",
   answers: ["Tiger", "Dragon", "Serpent", "Ox"],
   correctAnswer: "Dragon",
-  image: "assets/css/images/DRAGON.PNG"
+  image: "assets/css/images/dragon.jpg"
 }, {
   question: "How do you say Goodbye?",
   answers: ["Xie4 Xie4", "Zai4 Jian4", "Kai1 Xin1", "Ai4 Ya1"],
